@@ -20,16 +20,25 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-      extend: {
-        fontFamily: {
-          poppins: ["Poppins", "sans serif"];
-      }
-      }
+      tailwind.config = {
+        theme: {
+          screens: {
+            sm: "428px",
+            md: "834px",
+            lg: "1440px",
+          },
+          extend: {
+            fontFamily: {
+              poppins: ["Poppins", "sans serif"],
+            },
+          },
+        },
+      };
     </script>
   </head>
   <body>
     <header class="w-[100%] flex justify-center border-b">
-      <div class="container grid grid-cols-3 grid-rows-1 py-2 px-10">
+      <div class="container grid grid-cols-3 grid-rows-1 py-2 mx-10">
         <div class="logo text-[34px] font-bold place-items-center">
           <a href="#">BrandHunter</a>
         </div>
@@ -56,8 +65,8 @@
         </div>
       </div>
     </header>
-    <div class="container w-[100%] px-10 border-b">
-      <div class="navbar flex justify-between items-center py-5">
+      <div class="navbar border-b flex justify-center">
+    <div class="container w-[100%] flex justify-between items-center py-5 mx-10 ">
         <div class="catalog text-[17px] font-bold">
           <i class="fa-regular fa-images"></i>
           Catalog
@@ -74,9 +83,10 @@
           <i class="fa-solid fa-bag-shopping"></i>
         </div>
       </div>
+
     </div>
-    <div class="container w-[100%] px-10 pt-[30px]">
-      <div class="hero-img b">
+      <div class="hero-img flex justify-center">
+    <div class="container w-[100%] mx-10 pt-[30px]">
         <img
           src="./assets/icons/brand.svg"
           alt="brand"
@@ -96,21 +106,46 @@
         </div>
       </div>
     </div>
-<div class="container  px-10 pt-[35px]">
-  <div class="grid-boxes flex gap-[20px]">
-    <div class="grid-box grid grid-cols-[573px] grid-rows-1">
-      <img src="./assets/images/fall-release.png" alt="">
-    </div>
-      <div class="grid-box grid grid-cols-[425px] grid-rows-[448px,113px]">
-      <img src="./assets/images/fall-release.png" alt="">
-      <div class="black-box"><span>]nazrinist</span>kodu ilə 10% endirim əldə edin</div>
-      </div>
-      <div class="grid-box grid-box grid grid-cols-[425px] grid-rows-[680px]">
-      <img src="./assets/images/mens-top.png" alt="">
+<div class="grid-boxes flex justify-center relative object-cover">
+<div class="container mx-10 pt-[35px] grid grid-cols-10 gap-4 md:gap-5">
+  <div class="col-span-10 md:col-span-4">
+    <img src="./assets/images/fall-release.png" alt="fall" class="w-full h-full rounded-[20px] relative">
+    <div class="absolute text-white bottom-[2rem] ml-[1.5rem]">
+      <h3 class="text-[40px] font-bold">Fall Release</h3>
+      <p class="font-bold text-[16px]">The latest and greatest from our Fall collection</p>
     </div>
   </div>
+<div class="grid-box col-span-5 md:col-span-3 space-y-5">
+  <div class="flex w-full rounded-2xl relative overflow-hidden">
+    <img src="./assets/images/fall-release.png" alt="fall" class="w-full h-full">
+    <div class="absolute bottom-4 md:bottom-8 left-4 md:left-8 z-10  text-white">
+      <h3 class="text-[40px] font-bold">Fall Release</h3>
+      <p class="font-semibold text-[18px]">The latest and greatest from our Fall collection</p>
+    </div>
+  </div>
+  <div class="rounded-2xl bg-black p-6 md:p-[3rem] text-white text-4xl font-semibold"><span class="underline font-bold">nazrinist</span> Get 10% off with code</div>
 </div>
+    <div class="col-span-5 md:col-span-3">
+      <img src="./assets/images/mens-top.png" alt="men-top" class="w-full h-full rounded-[20px]">
+      <div class="absolute bottom-8 text-white ml-[1.5rem] w-[380px] tracking-wider">
+        <h3 class="text-[40px] font-bold">Summer Release</h3>
+        <p class="font-semibold text-[18px]">The latest and greatest from our Summer collection</p>
+      </div>
+    </div>
+</div>
+</div>
+<div class="container w-full mx-10 pt-[35px]">
+<div class="subscribe bg-[#FFDCDC] rounded-[10px]">
+    <div class="top-side text-4xl font-bold flex justify-between">
+      <span>Easy.</span>
+      <span>Trusted.</span>
+      <span>Premium.</span>
+        </div>
+        
+  </div>
 
+
+</div>
 
 
 
