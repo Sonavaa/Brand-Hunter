@@ -9,3 +9,6 @@
     border-radius: 50px;
     text-align: center;
 }
+.enter-email input::placeholder{
+    font-size: 22px;
+}
