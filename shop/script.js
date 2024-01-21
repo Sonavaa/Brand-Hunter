@@ -10,7 +10,9 @@ const btns = document.querySelectorAll("button");
 const firstBtn = document.getElementById("first");
 const firstBtn_p = document.getElementById("first p");
 const sort = document.getElementById("sıralama");
-
+const clearFilters = document.querySelector(".clear");
+const loader = document.querySelector(".loader"); 
+const products = document.querySelector(".products");
 
 
 filterBtns.forEach((btn, index) => {
@@ -49,4 +51,16 @@ firstBtn.addEventListener("click", () => {
   firstBtn.classList.toggle("rounded-b-none");
   firstBtn.classList.toggle("bg-[#ffdcdc]");
   firstBtn.classList.toggle("bg-neutral-100");
+});
+
+
+
+
+clearFilters.addEventListener('click', function() {
+  // document.forms['your-form-name'].reset();
+loader.classList.toggle("hidden");  
+products.classList.toggle("hidden");
+  setInterval(function() {
+    window.location.reload();
+  }, 500);
 });

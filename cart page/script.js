@@ -26,3 +26,8 @@ decrease_button.forEach((decrease_btn) => {
     }
   });
 });
+
+document.querySelector('your-element-selector').addEventListener('click', function() {
+  document.forms['your-form-name'].reset();
+  window.location.reload();
+});

@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.loader {
+    width: 42px;
+    height: 42px;
+    border: 8px dotted #000;
+    border-radius: 50%;
+    position: relative;
+    animation: rotation 2s linear infinite;
+    display: block;
+  }
+  
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
