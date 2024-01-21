@@ -13,6 +13,7 @@ const sort = document.getElementById("sıralama");
 const clearFilters = document.querySelector(".clear");
 const loader = document.querySelector(".loader"); 
 const products = document.querySelector(".products");
+const cards = document.querySelectorAll(".card img");
 
 
 filterBtns.forEach((btn, index) => {
@@ -53,9 +54,6 @@ firstBtn.addEventListener("click", () => {
   firstBtn.classList.toggle("bg-neutral-100");
 });
 
-
-
-
 clearFilters.addEventListener('click', function() {
   // document.forms['your-form-name'].reset();
 loader.classList.toggle("hidden");  
@@ -63,4 +61,8 @@ products.classList.toggle("hidden");
   setInterval(function() {
     window.location.reload();
   }, 500);
+});
+
+cards.addEventListener('click', function() {
+  
 });
