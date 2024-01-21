@@ -53,14 +53,12 @@ firstBtn.addEventListener("click", () => {
   firstBtn.classList.toggle("bg-neutral-100");
 });
 
-
-
-
 clearFilters.addEventListener('click', function() {
   // document.forms['your-form-name'].reset();
-loader.classList.toggle("hidden");  
-products.classList.toggle("hidden");
-  setInterval(function() {
-    window.location.reload();
-  }, 500);
+  loader.classList.toggle("hidden");  
+  products.classList.toggle("hidden");
+    setInterval(function() {
+      window.location.reload();
+    }, 500);
 });
+
