@@ -49,7 +49,7 @@
           <a href="../new In/index.html">New In</a>
           <a href="../shop/index.html">Shop</a>
           <a href="../sales/index.html">Sales</a>
-          <a href="">Brands</a>
+          <a href="../brands/index.html">Brands</a>
         </div>
         <div
           class="languageOfSite flex justify-end text-[18px] font-bold border-none place-items-center"
@@ -87,7 +87,7 @@
         <div class="cart flex relative">
           <i class="fa-solid fa-bag-shopping text-4xl relative"></i>
           <div
-            class="notfication absolute z-10 bg-red-500 py-[0.7px] px-[7px] rounded-[50px] text-[13px] left-[18px] bottom-[14px] text-center"
+            class="notfication absolute z-10 bg-[#ffdcdc] py-[0.7px] px-[7px] rounded-[50px] text-[13px] left-[15px] bottom-[12px] text-center"
           >
             4
           </div>
@@ -101,14 +101,14 @@
           <div class="w-[180px] space-y-3">
             <div class="space-y-3">
               <div>
-                <button
-                  class="w-full flex items-center justify-between hover:bg-[#ffdcdc] px-3 py-2 font-bold bg-neutral-100 border rounded-full filterBtn"
+                <button id="first"
+                  class="w-full flex items-center justify-between hover:bg-[#ffdcdc] px-3 py-2 font-bold bg-[#ffdcdc] border rounded-t-[10px] filterBtn"
                 >
-                  <span>Kateqoriyalar</span>
-                  <p class="text-xl font-normal plusIcon">+</p>
-                </button>
-                <ul id="categoryList" class="border rounded-b-xl hidden filter">
-                  <li class="w-full">
+                <span>Kateqoriyalar</span>
+                <p class="text-xl font-normal plusIcon">-</p>
+              </button>
+              <ul id="categoryList" class="border rounded-b-xl filter">
+                <li class="w-full">
                     <div>
                       <button
                         class="w-full flex items-center justify-between transition-colors px-3 py-2 hover:bg-neutral-100 text-sm font-medium categoryBtn"
@@ -390,12 +390,12 @@
               </div>
             </div>
             <div>
-              <button
-                class="flex items-center justify-between w-full hover:bg-[#ffdcdc] px-3 py-2 font-bold bg-neutral-100 border rounded-full"
+              <div
+                class="w-full hover:bg-[#ffdcdc] px-3 py-2 font-bold bg-neutral-100 border rounded-full"
               >
-                <span> Clear filters </span>
-                <img class="w-[15px]" src="/assets/icons/rotate.svg" alt="" />
-              </button>
+                <span class="flex items-baseline justify-between w-full "> Clear filters <i class="fa-solid fa-arrows-rotate text-sm"></i></span>
+                <img class="w-[14px]" src="/assets/icons/rotate.svg" alt="" />
+            </div>
             </div>
           </div>
           <div></div>
@@ -403,25 +403,35 @@
       </div>
       <div class="right-side">
         <div class="flex gap-5">
-          <button
+          <div
             class="border flex justify-between items-center w-[180px] text-sm font-bold px-4 py-2 bg-neutral-100 rounded-full mt-8"
           >
-            <span> Sıralama </span>
+        
+          <span class="flex items-baseline justify-between w-[180px]"> Sıralama <i class="fa-solid fa-sort"></i></span>
             <img src="/assets/icons/arrows-up-down.svg" alt="" />
-          </button>
-          <button
-          class="border flex justify-between items-center w-[180px] text-sm font-bold px-4 py-2 bg-neutral-100 rounded-full mt-8"
+          </div>
+          <div
+          class="border flex justify-between items-center w-[128px] text-sm font-bold px-4 py-2 bg-neutral-100 rounded-full mt-8"
         >
-          <span> Endirimlər </span>
+          <span class="flex items-center justify-between w-full"> Endirimlər <span class="font-normal text-lg">×</span></span>
           <img src="/assets/icons/arrows-up-down.svg" alt="" />
-        </button>
+        </div>
         </div>
         <div class="container flex gap-[35px] flex-wrap mt-5">
           <div class="card">
             <img
               src="../imgs/charleskeith-canta-sku010-Tt63yMTDWpZo71pt.webp"
               alt="img"
-              class="w-[250px] h-[250px] object-cover border rounded-[15px]"
+              class="w-[280px] h-[280px] object-cover border rounded-[15px] hover:border-[#ffdcdc] hover:border-[2.5px]"
+            />
+            <p class="text-[13px] font-semibold my-[4px]">Hand bag</p>
+            <span class="text-[18px] font-semibold">AZN 355.00</span>
+          </div>
+          <div class="card">
+            <img
+              src="../imgs/charleskeith-canta-sku010-Tt63yMTDWpZo71pt.webp"
+              alt="img"
+              class="w-[280px] h-[280px] object-cover border rounded-[15px] hover:border-[#ffdcdc] hover:border-[2.5px]"
             />
             <p class="text-[13px] font-semibold my-[4px]">Hand bag</p>
             <span class="text-[18px] font-semibold">AZN 355.00</span>
@@ -431,7 +441,7 @@
     </main>
 
     <div class="pages border py-8 mt-20 mb-5">
-      <div class="container flex justify-center items-baseline gap-2">
+      <div class="container flex justify-center items-baseline gap-2 mx-auto">
         <p class="border bg-neutral-100 border-2 py-1 px-5 rounded-full">
           Əvvəlki
         </p>
